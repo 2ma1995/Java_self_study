@@ -1,8 +1,8 @@
 package chapter3.ch08;
 
 public class Student {
-    int studentId;
-    String studentName;
+   private final int studentId;
+   private String studentName;
 
     Subject korean;
     Subject math;
@@ -27,6 +27,15 @@ public class Student {
 
     public void showStudentScore() {
         int total = korean.score + math.score;
-        System.out.println(studentName+" 학생의 총점은 "+total+"점 입니다.");
+        System.out.println(studentName + " 학생의 총점은 " + total + "점 입니다.");
+    }
+
+//        private로 getStudentId를 숨겼을경우 Id를조회할때
+    public int getStudentId(){
+        return studentId;
+    }
+//      private를 사용했을때, 이름을 변경하는 방법
+    public void setStudentName(String name){
+        this.studentName = name;
     }
 }

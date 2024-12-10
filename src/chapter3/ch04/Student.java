@@ -7,6 +7,12 @@ public class Student {
 
     public Student(){}
 
+    public Student(int id,String name){
+//        this.studentId = studentId; 이렇게 사용
+        studentId = id;
+        studentName = name;
+    }
+
     public Student(int id,String name,String studentAddress){
 //        this.studentId = studentId; 이렇게 사용
         studentId = id;

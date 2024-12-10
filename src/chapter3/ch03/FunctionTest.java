@@ -4,11 +4,12 @@ public class FunctionTest {
     public static void main(String[] args) {
         int n1 = 10;
         int n2 = 20;
-       int total =addNum(n1,n2);
+       int total =addNum(30,20);
         System.out.println("total = " + total);
 
 //        sayHello호출 (반환값은 없고, 매개변수있는 함수)
     sayHello("yo");
+
 //        (반환값은 있고, 매개변수없는 함수)
     int sum =calcSum();
         System.out.println(sum);
