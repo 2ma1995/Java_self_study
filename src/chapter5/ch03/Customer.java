@@ -1,4 +1,4 @@
-package chapter5.ch01;
+package chapter5.ch03;
 
 public class Customer {
     protected int cutomerId;
@@ -8,9 +8,21 @@ public class Customer {
     int bonusPoint;
     double bonusRatio;
 
-    public Customer(){
+//    public Customer(){
+//        customerGrade = "SILVER";
+//        bonusRatio=0.01;
+//        System.out.println("Customer() call");
+//    }
+
+    public Customer(int cutomerId,String cutomerName){
+        this.cutomerId=cutomerId;
+        this.cutomerName=cutomerName;
+
         customerGrade = "SILVER";
         bonusRatio=0.01;
+        System.out.println("Customer() call");
+
+
     }
 
     public int getCutomerId() {
